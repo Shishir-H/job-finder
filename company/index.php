@@ -43,7 +43,8 @@
                 <?php 
                 while($row = mysqli_fetch_assoc($result)){ ?>
                 <div class="job">
-                    <div class="title"><?php echo($row["job_title"]) ?>
+                    <div class="title">
+                        <a href="application.php?aid=<?php echo($row["id"])?>"> <?php echo($row["job_title"]) ?> </a>
                     </div>
                     <div class="short-desc"><?php echo($row["job_description"])?></div>
                 </div>

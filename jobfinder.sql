@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2020 at 08:35 AM
+-- Generation Time: Dec 29, 2020 at 03:38 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `application`
 --
 -- Creation: Dec 28, 2020 at 07:19 AM
+-- Last update: Dec 29, 2020 at 01:15 PM
 --
 
 CREATE TABLE `application` (
@@ -42,12 +43,21 @@ CREATE TABLE `application` (
 --       `user` -> `id`
 --
 
+--
+-- Dumping data for table `application`
+--
+
+INSERT INTO `application` (`id`, `company_id`, `job_title`, `job_description`) VALUES
+(1, 8, 'job1', 'des1'),
+(3, 8, 'job3', 'des3');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `applied`
 --
--- Creation: Dec 28, 2020 at 07:23 AM
+-- Creation: Dec 29, 2020 at 01:07 PM
+-- Last update: Dec 29, 2020 at 01:59 PM
 --
 
 CREATE TABLE `applied` (
@@ -64,12 +74,23 @@ CREATE TABLE `applied` (
 --       `user` -> `id`
 --
 
+--
+-- Dumping data for table `applied`
+--
+
+INSERT INTO `applied` (`application_id`, `student_id`, `status`) VALUES
+(1, 9, 'applied'),
+(1, 10, 'selected'),
+(1, 11, 'selected'),
+(3, 10, 'selected');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `company_details`
 --
 -- Creation: Dec 28, 2020 at 07:07 AM
+-- Last update: Dec 29, 2020 at 12:00 PM
 --
 
 CREATE TABLE `company_details` (
@@ -84,12 +105,20 @@ CREATE TABLE `company_details` (
 --       `user` -> `id`
 --
 
+--
+-- Dumping data for table `company_details`
+--
+
+INSERT INTO `company_details` (`user_id_c`, `address`, `details`) VALUES
+(8, 'new', 'new ');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `student_details`
 --
 -- Creation: Dec 28, 2020 at 07:04 AM
+-- Last update: Dec 29, 2020 at 11:43 AM
 --
 
 CREATE TABLE `student_details` (
@@ -105,12 +134,21 @@ CREATE TABLE `student_details` (
 --       `user` -> `id`
 --
 
+--
+-- Dumping data for table `student_details`
+--
+
+INSERT INTO `student_details` (`user_id_s`, `bio`, `education`, `contact`) VALUES
+(9, 'as2sd', 'asdds', 'sadsda'),
+(10, '                                                                        this is my bio   edited                                                         ', '                                                                        2nd puc     edited                                                       ', '               lol working                                                         hi@gmail.com                                                            ');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `user`
 --
 -- Creation: Dec 28, 2020 at 07:12 AM
+-- Last update: Dec 29, 2020 at 01:23 PM
 --
 
 CREATE TABLE `user` (
@@ -124,6 +162,16 @@ CREATE TABLE `user` (
 --
 -- RELATIONSHIPS FOR TABLE `user`:
 --
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`) VALUES
+(8, 'company1', 'company1@gmail.com', '123', 'company'),
+(9, 'student1', 'student1@gmail.com', '123', 'student'),
+(10, 'student2', 'student2@gmail.com', '123', 'student'),
+(11, 'student3', 'student3@gmail.com', '123', 'student');
 
 --
 -- Indexes for dumped tables
@@ -141,7 +189,7 @@ ALTER TABLE `application`
 -- Indexes for table `applied`
 --
 ALTER TABLE `applied`
-  ADD KEY `application_id` (`application_id`),
+  ADD UNIQUE KEY `application_id` (`application_id`,`student_id`),
   ADD KEY `student_id` (`student_id`);
 
 --
@@ -170,13 +218,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `application`
 --
 ALTER TABLE `application`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
