@@ -110,3 +110,11 @@ h1{
     flex-direction: row;
     max-width: 600px;
 }
+.signup-cards img{
+    width: 40%;
+    margin: 2rem;
+}
+
+.btn-signup{
+    display: block;
+}
