@@ -12,7 +12,7 @@
             <h1>Job Finder</h1>
             <a href="profile.php">My profile</a>
         </nav>
-        <h2>My Jobs Openings</h2>
+        <h2>My Jobs Listings</h2>
 
         <div class="card">
             <div class="jobs">
