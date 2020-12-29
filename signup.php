@@ -9,5 +9,9 @@
             (`username`, `email`, `password`, `role`)
              VALUES ('$username', '$email', '$password', '$role')";
 
-	$result = mysqli_query($conn, $query);
+    $result = mysqli_query($conn, $query);
+    
+    if($result){
+         header("Location: login.html");
+    }
 ?>

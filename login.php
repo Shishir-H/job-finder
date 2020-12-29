@@ -7,24 +7,24 @@
 
     $query = "SELECT * FROM user WHERE email = '$email' AND password = '$password'";
 
-			$result = mysqli_query($conn, $query);
-			$row = mysqli_fetch_assoc($result);
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
 
-			$count = mysqli_num_rows($result);
+    $count = mysqli_num_rows($result);
 
-			if($count == 1){
-				
-                $_SESSION['email'] = $row['email'];
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['id'] = $row['id'];
+    if($count == 1){
+        
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['username'] = $row['username'];
+        $_SESSION['id'] = $row['id'];
 
-                if($row['role'] === "student"){
-                    header("Location: student/");
-                }else{
-                    header("Location: company/");
-                }
+        if($row['role'] === "student"){
+            header("Location: student/");
+        }else{
+            header("Location: company/");
+        }
 
-			}else{
-				echo("<div class='alert alert-danger mt-3 text-center'>Invalid Email/Password</div>");
-			}
+    }else{
+        echo("<div class='alert alert-danger mt-3 text-center'>Invalid Email/Password</div>");
+    }
 ?>
