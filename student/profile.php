@@ -47,21 +47,15 @@
                 <div class="form-control">
 
                     <h6 for="bio">Bio:</h6>
-                    <textarea name="bio" id="bio" cols="30" rows="5">
-                        <?php echo($bio) ?>
-                    </textarea>
+                    <input name="bio" id="bio" value="<?php echo($bio) ?>" />
                 </div>
                 <div class="form-control">
                     <h6 for="education">Education:</h6>
-                    <textarea name="education" id="education" cols="30" rows="5">
-                        <?php echo($education) ?>
-                    </textarea>
+                    <input name="education" id="education" value="<?php echo($education)?>">
                 </div>
                 <div class="form-control">
                     <h6 for="contact">Contact:</h6>
-                    <textarea name="contact" id="contact" cols="30" rows="5">
-                        <?php echo($contact) ?>
-                    </textarea>
+                    <input name="contact" id="contact" value="<?php echo($contact) ?>" />
                 </div>
                 <button>Update</button>
             </form>

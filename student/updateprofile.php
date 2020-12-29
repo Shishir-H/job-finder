@@ -17,8 +17,7 @@
     }else{
         $query = "INSERT INTO   
         `student_details` (`user_id_s`, `bio`, `education`, `contact`) 
-        VALUES ('$id', '$bio', '$education', '$contact')  
-        WHERE `student_details`.`user_id_s` = '$id';";
+        VALUES ('$id', '$bio', '$education', '$contact');";
         $result = mysqli_query($conn, $query); 
     }
     
