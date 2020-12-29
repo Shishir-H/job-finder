@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+/* ------------- Landing Page---------------  */
+.hero-img img{
+    width: 40rem;
+    mix-blend-mode: darken;
+    }
+.hero-img{
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+/* ------------ Buttons -------------------- */
+
+.container{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    z-index: 100;
+}
+.btn,
+.btn:link,
+.btn:visited {
+    font-weight: 400;
+    background-color: hsl(34, 96%, 53%);
+    padding: 10px 18px;
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition-duration: 0.4s;
+}
+.btn-full,
+.btn-full:link,
+.btn-full :visited {
+    color: white;
+    padding: 7px 42px;
+    margin-right: 5px;
+    margin-top: 8px;
+    background-color: orange;
+    border: 1px solid orange;
+
+
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    color: orange;
+    padding: 7px 42px;
+    margin-top: 8px;
+    background-color: transparent;
+    border:1px solid orange;
+
+}
+
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgba(241, 111, 24, 0.89);
+}
+
+.btn:hover,
+.btn:active{
+    color: white;
+    background-color:#f08e1d ;
+}
+
+/* ---------Hero Text-------------- */
+.hero-text{
+    position: absolute;
+    width: 100rem;
+    top: 25%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width:40%;
+    line-height: 3rem;
+    
+}
+
+/* ---------------SIGNUP Container------------ */
+
+.signup-container{
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-cards{
+    background-color: aliceblue;
+    margin: 2rem;
+    padding: 2rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
