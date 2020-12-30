@@ -20,13 +20,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/style.css" />
+
+
         <title>Home</title>
     </head>
 
     <body>
-        <nav>
+        <nav class="nav-bar">
             <h1>Job Finder</h1>
-            <a href="profile.php">My profile</a>
+            <a class="nav-btn" href="profile.php">My profile</a>
         </nav>
         <h2>My Jobs Listings</h2>
         <div>
