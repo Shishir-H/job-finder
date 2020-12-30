@@ -288,3 +288,28 @@ h2{
     font-size: 1.5rem;
     margin: 1.5rem;
 }
+
+
+/* --------------------------Application CompANny------------------------ */
+
+.applicant{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.applicant-name a{
+   margin: 2rem;
+   font-size: 2rem; 
+   color: #171717;
+   text-decoration: none;
+}
+.application-status{
+    margin: 1rem;
+    font-size: 1rem;  
+    background-color: rgb(255, 239, 13);
+    padding: 0.5rem; 
+    border-radius: 0.5rem;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+} 

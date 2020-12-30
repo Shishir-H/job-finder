@@ -63,20 +63,20 @@
         </nav>
         <h2>Application</h2>
 
-        <div class="card">
+        <div class="card" style="width: 70%;">
             <div class="job-title"><?php echo($row1['job_title'])?></div>
             <div class="job-desc"><?php echo($row1['job_description'])?></div>
         </div>
         <h2>Applicants:</h2>
-        <div class="applicants">
+        <div class="card">
             <?php while($row = mysqli_fetch_assoc($result)){ ?>
-            <div class="student">
-                <div class="name"><a href="studentprofile.php?id=<?php echo($row["id"]); ?>">
+            <div class="applicant">
+                <div class="applicant-name"><a href="studentprofile.php?id=<?php echo($row["id"]); ?>">
                         <?php echo($row["username"]); ?></a></div>
                 <?php if($row["status"] === "selected"){ ?>
-                <i>selected✔</i>
+                <i class="application-status">selected✔</i>
                 <?php }else{?>
-                <a href="application.php?aid=<?php echo($aid)?>&sid=<?php echo($row["id"])?>">select</a>
+                <a class="application-status" href="application.php?aid=<?php echo($aid)?>&sid=<?php echo($row["id"])?>">select</a>
                 <?php }?>
             </div>
             <?php } ?>

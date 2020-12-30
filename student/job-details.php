@@ -56,7 +56,7 @@
         <h2>Job Details</h2>
     </body>
 
-    <div class="card">
+    <div class="card" style="width: 70%;">
         <div class="job-title">Title</div>
         <div class="job-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolore nihil consequatur qui
             debitis saepe. Repellat blanditiis aut eligendi? Totam?</div>
