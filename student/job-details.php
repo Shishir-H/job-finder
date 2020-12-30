@@ -42,7 +42,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../../styles/style.css" />
 
 
         <title>Job Details</title>
@@ -58,10 +58,10 @@
 
     <div class="card">
         <div class="job-title">Title</div>
-        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolore nihil consequatur qui
+        <div class="job-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolore nihil consequatur qui
             debitis saepe. Repellat blanditiis aut eligendi? Totam?</div>
         <?php if($applied){ ?>
-        <div class="applied">applied✔</div>
+        <div class="applied" class="applied">applied✔</div>
         <div class="status">Status:
 
             <?php if($row['status'] === "selected"){ ?>
@@ -71,7 +71,10 @@
             <?php } ?>
         </div>
         <?php }else{ ?>
-        <a href="job-details.php?apply=true&id=<?php echo($_GET['id'])?>">apply</a>
+            <div class="btn-apply">
+            <a href="job-details.php?apply=true&id=<?php echo($_GET['id'])?>">Apply</a>
+
+            </div>
         <?php } ?>
     </div>
 

@@ -63,7 +63,7 @@
         </nav>
         <h2>Application</h2>
 
-        <div class="job-applicants">
+        <div class="card">
             <div class="job-title"><?php echo($row1['job_title'])?></div>
             <div class="job-desc"><?php echo($row1['job_description'])?></div>
         </div>

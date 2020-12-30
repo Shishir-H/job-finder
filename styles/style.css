@@ -213,7 +213,7 @@ h2{
 }
 
 .job-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
 }
 .job-title a{
@@ -250,5 +250,41 @@ h2{
     padding: 1.5rem;
 }
 
-/* -----------------------------List New Job Company---------------------- */
+/* -----------------------------Job details---------------------- */
 
+.job-desc{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.applied{
+    margin: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    background-color:rgb(255, 239, 13);
+    border-radius: 1rem;
+}
+
+.btn-apply{
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    background-color:rgb(255, 239, 13);
+    border-radius: 1rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.btn-apply a{
+    text-decoration: none;
+    align-items: center;
+    color: #171717;
+}
+.status{
+    margin: 1rem;
+}
+
+/* -----------------Student Profile-------------------- */
+
+.student-details{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}

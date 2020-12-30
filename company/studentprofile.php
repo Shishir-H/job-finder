@@ -25,23 +25,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../styles/style.css" />
+
         <title>Stdent profile</title>
     </head>
 
     <body>
-        <nav>
-            <h1>Job Finder</h1>
+    <nav class="nav-bar">
+            <h1>Job Finder <i class="fa fa-suitcase" aria-hidden="true"></i></h1>
+            <a class="nav-btn" href="../index.html">Logout</a>
         </nav>
         <h2>Student Profile</h2>
         <div class="card">
-            <div class="name"><?php echo($name) ?></div>
+            <div class="username"><?php echo($name) ?></div>
             <div class="email"><?php echo($email) ?></div>
-            <h4>Bio:</h4>
-            <div class="bio"><?php echo($bio) ?></div>
-            <h4>Education:</h4>
-            <div class="education"><?php echo($education) ?></div>
-            <h4>Contact:</h4>
-            <div class="contact"><?php echo($contact) ?></div>
+            
+            <div class="student-details">
+                <h4>Bio:</h4>
+                <?php echo($bio) ?>
+            </div>
+            
+            <div class="student-details">
+                <h4>Education:</h4>
+                <?php echo($education) ?>
+            </div>
+            
+            <div class="student-details">
+                <h4>Contact:</h4>
+                <?php echo($contact) ?>
+            </div>
         </div>
     </body>
 

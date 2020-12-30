@@ -46,10 +46,10 @@
 
         <div class="card">
             <div class="username">
-                <h3>Username : <?php echo($username) ?></h3>
+                <h3><?php echo($username) ?></h3>
             </div>
             <div class="email">
-                <h3>E-mail : <?php echo($email) ?></h3>
+                <h3><?php echo($email) ?></h3>
             </div>
             <form class="profile-form" action="updateprofile.php" method="POST">
                 <div class="form-control">
