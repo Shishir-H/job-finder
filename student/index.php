@@ -36,7 +36,7 @@
         </nav>
         <h2>Job Listings</h2>
 
-        <div class="card">
+        <div class="job-list-card">
             <!-- <div class="jobs"> -->
                 <!-- dummy- -->
                 <!-- <div class="job">

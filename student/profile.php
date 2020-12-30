@@ -39,7 +39,8 @@
 
     <body>
         <nav class="nav-bar">
-            <h1>Job Finder</h1>
+            <h1>Job Finder <i class="fa fa-suitcase" aria-hidden="true"></i></h1>
+            <a class="nav-btn" href="../index.html">Logout</a>
         </nav>
         <h2>My Profile</h2>
 
@@ -50,7 +51,7 @@
             <div class="email">
                 <h3>E-mail : <?php echo($email) ?></h3>
             </div>
-            <form class="form-container" action="updateprofile.php" method="POST">
+            <form class="profile-form" action="updateprofile.php" method="POST">
                 <div class="form-control">
 
                 </div>
