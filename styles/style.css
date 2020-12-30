@@ -46,9 +46,9 @@ h1{
     color: white;
     transition-duration: 0.4s;
 }
-.btn-full,
-.btn-full:link,
-.btn-full :visited {
+.btn,
+.btn:link,
+.btn :visited {
     color: white;
     padding: 7px 42px;
     margin-right: 5px;
@@ -71,8 +71,8 @@ h1{
 }
 
 
-.btn-full:hover,
-.btn-full:active {
+.btn:hover,
+.btn:active {
     background-color: rgba(241, 111, 24, 0.89);
 }
 
@@ -117,4 +117,100 @@ h1{
 
 .btn-signup{
     display: block;
+}
+
+/* ----------------------Form------------------ */
+
+.form-container{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+}
+.form-container h1{
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+input[type=text],input[type=email],input[type=password] {
+    width: 100%;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0rem;
+    outline: none;
+}
+.form-container button{
+    width:100%;
+    margin: 1rem auto;
+}
+
+
+/* ---------------Media Query----------------- */
+
+@media only screen and (max-width:600px){
+    .form-container{
+      width: 95vw;
+      padding: 1rem;
+    }
+}
+
+
+/* ----------------Navbar---------------------- */
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #171717;
+    color: white;
+    height: 10vh;
+    align-items: center;
+}
+.nav-btn{
+    text-decoration: none;
+    font-size: 1rem;
+    border: 0.02rem solid white;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    cursor: pointer;
+    color: white;
+}
+/* -------------------------------------- */
+
+h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.card{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.job{
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 0.02rem solid black;
+    border-radius: 1rem;
+}
+
+.job-title{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.job-title a{
+    text-decoration: underline;
+    color: #171717;
+    text-transform: capitalize;
+    
+}
+.short-desc{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+/* ---------------Profile----------------- */
+h3{
+    margin: 1rem;
 }

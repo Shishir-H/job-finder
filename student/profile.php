@@ -24,40 +24,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/style.css" />
+
         <title>My Profile</title>
     </head>
 
     <body>
-        <nav>
+        <nav class="nav-bar">
             <h1>Job Finder</h1>
         </nav>
         <h2>My Profile</h2>
 
         <div class="card">
             <div class="username">
-                <h3><?php echo($username) ?></h3>
+                <h3>Username : <?php echo($username) ?></h3>
             </div>
             <div class="email">
-                <h4><?php echo($email) ?></h4>
+                <h3>E-mail : <?php echo($email) ?></h3>
             </div>
-            <form action="updateprofile.php" method="POST">
+            <form class="form-container" action="updateprofile.php" method="POST">
                 <div class="form-control">
 
                 </div>
                 <div class="form-control">
 
                     <h6 for="bio">Bio:</h6>
-                    <input name="bio" id="bio" value="<?php echo($bio) ?>" />
+                    <input type="text" name="bio" id="bio" value="<?php echo($bio) ?>" />
                 </div>
                 <div class="form-control">
                     <h6 for="education">Education:</h6>
-                    <input name="education" id="education" value="<?php echo($education)?>">
+                    <input type="text" name="education" id="education" value="<?php echo($education)?>">
                 </div>
                 <div class="form-control">
                     <h6 for="contact">Contact:</h6>
-                    <input name="contact" id="contact" value="<?php echo($contact) ?>" />
+                    <input type="text" name="contact" id="contact" value="<?php echo($contact) ?>" />
                 </div>
-                <button>Update</button>
+                <button class="btn">Update</button>
             </form>
         </div>
     </body>
