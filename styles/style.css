@@ -1,50 +1,49 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
-h1{
-    text-align: center;
-    text-transform: capitalize;
+h1 {
+  text-align: center;
+  text-transform: capitalize;
 }
 /* ------------- Landing Page---------------  */
-.hero-img img{
-    width: 30rem;
-    margin: 5rem 0;
-    mix-blend-mode: darken;
-    }
-.hero-img{
-    height: 100vh;
-    
+.hero-img img {
+  width: 30rem;
+  margin: 5rem 0;
+  mix-blend-mode: darken;
+}
+.hero-img {
+  height: 100vh;
 }
 
 /* ------------ Buttons -------------------- */
 
-.container{
-    width: 30%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 55%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    width: fit-content;
-    z-index: 100;
+.container {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  z-index: 100;
 }
-.btn{
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 239, 13);
-    border-radius: 0.4rem;
-    border: none;
+.btn {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 239, 13);
+  border-radius: 0.4rem;
+  border: none;
 }
 /* .btn,
 .btn:link,
@@ -96,220 +95,215 @@ h1{
 } */
 
 /* ---------Hero Text-------------- */
-.hero-text{
-    position: absolute;
-    width: 100rem;
-    top: 25%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    width:40%;
-    line-height: 3rem;
-    margin-top: 5rem;
-    
-    
+.hero-text {
+  position: absolute;
+  width: 100rem;
+  top: 25%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 3rem;
+  margin-top: 5rem;
 }
 
 /* ---------------SIGNUP Container------------ */
 
-.signup-container{
-    display: flex;
-    width: 100%;
-    margin: 2rem auto;
-    align-items: center;
+.signup-container {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  align-items: center;
 }
-.signup-cards{
-  
+.signup-cards {
 }
-.signup-img{
-    margin: 1rem auto;
-    align-items: center;
+.signup-img {
+  margin: 1rem auto;
+  align-items: center;
 }
-.signup-img img{
-    width: 50%;
+.signup-img img {
+  width: 50%;
 }
-.btn-signup{
-    display: block;
+.btn-signup {
+  display: block;
 }
 
 /* ----------------------Form------------------ */
 
-.form-container{
-    width: 30%;
-    box-sizing: border-box;
-    padding: 1rem 2rem;
-    margin: 2rem auto;
+.form-container {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
 }
-.form-container h1{
-    text-align: center;
-    margin-bottom: 1.7rem;
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.7rem;
 }
-input[type=text],input[type=email],input[type=password] {
-    width: 100%;
-    border: 0.01rem solid #ccc;
-    border-radius: 0.4rem;
-    padding: 0.8rem 1rem;
-    margin: 1rem 0rem;
-    outline: none;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: 0.01rem solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0rem;
+  outline: none;
 }
-.form-container button{
-    width:100%;
-    margin: 1rem auto;
+.form-container button {
+  width: 100%;
+  margin: 1rem auto;
 }
-
 
 /* ---------------Media Query----------------- */
 
-@media only screen and (max-width:600px){
-    .form-container{
-      width: 95vw;
-      padding: 1rem;
-    }
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 95vw;
+    padding: 1rem;
+  }
 }
-
 
 /* ----------------Navbar---------------------- */
 
-.nav-bar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: #171717;
-    color: white;
-    height: 10vh;
-    align-items: center;
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #171717;
+  color: white;
+  height: 10vh;
+  align-items: center;
 }
-.nav-btn{
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-    margin: 2rem;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 239, 13);
-    border-radius: 0.4rem;
+.nav-btn {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 2rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 239, 13);
+  border-radius: 0.4rem;
 }
-h1{
-    margin: 1rem;
+h1 {
+  margin: 1rem;
 }
 /* -------------------------------------- */
 
-h2{
-    text-align: center;
-    margin: 2rem;
+h2 {
+  text-align: center;
+  margin: 2rem;
 }
 
-.card{
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    margin: 0 auto;
+.card {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.job{   
-    margin: 2rem;
-    padding: 1.5rem;
-    border: 0.02rem solid black;
-    border-radius: 1rem;
+.job {
+  margin: 2rem;
+  padding: 1.5rem;
+  border: 0.02rem solid black;
+  border-radius: 1rem;
 }
 
-.job-title{
-    font-size: 2rem;
-    margin: 1rem;
+.job-title {
+  font-size: 2rem;
+  margin: 1rem;
 }
-.job-title a{
-    text-decoration: underline;
-    color: #171717;
-    text-transform: capitalize;
-    
+.job-title a {
+  text-decoration: underline;
+  color: #171717;
+  text-transform: capitalize;
 }
-.short-desc{
-    font-size: 1.2rem;
-    margin: 1rem;
+.short-desc {
+  font-size: 1.2rem;
+  margin: 1rem;
 }
 /* ---------------Profiles----------------- */
 
-.card{
-    background-color:white;
-    border-radius: 0.5rem;
-    width: 35%;
-    border: 00.02rem solid gray;
+.card {
+  background-color: white;
+  border-radius: 8px;
+  width: 80%;
+  border: 00.02rem solid #c0c0c0;
 }
-.username{
-    font-size: 3rem;
-    margin: 1rem;
-    margin-bottom: 2px;
+.username {
+  font-size: 3rem;
+  margin: 1rem;
+  margin-bottom: 2px;
 }
-.email{
-    font-size: 1rem;
-    margin: 0 1rem;
+.email {
+  font-size: 1rem;
+  margin: 0 1rem;
 }
-.form-control input[type=text]{
-    width: 80%;
+.form-control input[type="text"] {
+  width: 80%;
 }
-.profile-form{
-    padding: 1.5rem;
+.profile-form {
+  padding: 1.5rem;
 }
 
 /* -----------------------------Job details---------------------- */
 
-.job-desc{
-    margin: 1rem;
-    font-size: 1.5rem;
+.job-desc {
+  margin: 1rem;
+  font-size: 1.5rem;
 }
-.applied{
-    margin: 1rem;
-    padding: 1rem;
-    width: fit-content;
-    background-color:rgb(255, 239, 13);
-    border-radius: 1rem;
+.applied {
+  margin: 1rem;
+  padding: 1rem;
+  width: fit-content;
+  background-color: rgb(255, 239, 13);
+  border-radius: 1rem;
 }
 
-.btn-apply{
-    margin: 1rem;
-    padding: 1rem;
-    align-items: center;
-    background-color:rgb(255, 239, 13);
-    border-radius: 1rem;
-    width: fit-content;
-    cursor: pointer;
+.btn-apply {
+  margin: 1rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: rgb(255, 239, 13);
+  border-radius: 1rem;
+  width: fit-content;
+  cursor: pointer;
 }
-.btn-apply a{
-    text-decoration: none;
-    align-items: center;
-    color: #171717;
+.btn-apply a {
+  text-decoration: none;
+  align-items: center;
+  color: #171717;
 }
-.status{
-    margin: 1rem;
+.status {
+  margin: 1rem;
 }
 
 /* -----------------Student Profile-------------------- */
 
-.student-details{
-    font-size: 1.5rem;
-    margin: 1.5rem;
+.student-details {
+  font-size: 1.5rem;
+  margin: 1.5rem;
 }
-
 
 /* --------------------------Application CompANny------------------------ */
 
-.applicant{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.applicant {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.applicant-name a{
-   margin: 2rem;
-   font-size: 2rem; 
-   color: #171717;
-   text-decoration: none;
+.applicant-name a {
+  margin: 2rem;
+  font-size: 2rem;
+  color: #171717;
+  text-decoration: none;
 }
-.application-status{
-    margin: 1rem;
-    font-size: 1rem;  
-    background-color: rgb(255, 239, 13);
-    padding: 0.5rem; 
-    border-radius: 0.5rem;
-    width: fit-content;
-    text-decoration: none;
-    color: black;
-} 
+.application-status {
+  margin: 1rem;
+  font-size: 1rem;
+  background-color: rgb(255, 239, 13);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+}
