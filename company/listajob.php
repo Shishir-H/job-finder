@@ -27,27 +27,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-        <script>tinymce.init({selector:'text'});</script>
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../styles/style.css" />
 
         <title>New Job</title>
     </head>
 
     <body>
-        <nav>
-            <h1>Job Finder</h1>
+        <nav class="nav-bar">
+            <h1>Job Finder  <i class="fa fa-suitcase" aria-hidden="true"></i></h1>
+            <a class="nav-btn" href="../index.html">Logout</a>
         </nav>
         <h2>List a new Job</h2>
         <div class="card">
-            <div class="job">
-                <form action="listajob.php" method="POST">
+            <div>
+                <form class="profile-form" action="listajob.php" method="POST">
                     <label for="title">Job Title</label>
                     <input type="text" name="title" id="title">
                     <label for="description">Job Description</label>
