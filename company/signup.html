@@ -12,15 +12,13 @@
     <title>Signup</title>
   </head>
   <body>
-    <h1>Signup (Company)</h1>
+    
     <div class="form-container">
+      <h1>Signup (Company)</h1>
       <form action="../signup.php" method="POST">
-        <label for="username">username</label>
-        <input type="text" name="username" id="username" />
-        <label for="email">Company email</label>
-        <input type="email" name="email" id="email" />
-        <label for="password">password</label>
-        <input type="password" name="password" id="password" />
+        <input type="text" placeholder="Username" name="username" id="username" />
+        <input type="email" placeholder="Email" name="email" id="email" />
+        <input type="password" placeholder="Password" name="password" id="password" />
         <input type="hidden" name="role" value="company" />
         <button class="btn">Signup</button>
       </form>
